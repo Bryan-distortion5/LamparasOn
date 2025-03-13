@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Fredoka One';
+}
+.instruccion {
+    font-size: 24px;
+    margin-bottom: 30px;  /* Separación entre la instrucción y las lámparas */
+    text-align: center;
+    color: rgba(43, 255, 0, 0.808);  /* Color blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.815);  /* Sombra para mejorar la visibilidad */
+}
+.lampara{
+    width: 300px;
+    border-bottom: 10px solid #fff;
+    position: relative;
+}
+.cable{
+    width: 2px;
+    margin: auto;
+    background-color: #626262;
+    height: 200px;
+}
+.caja{
+    width: 80px;
+    height: 40px;
+    background-color: #626262;
+    margin: auto;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.luz{
+    max-width: 300px;
+    margin: auto;
+    height: 200px;
+    clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%);
+    padding-top: 40px;
+}
+.l0{
+    background: linear-gradient(rgb(255, 120, 58), rgba(253, 0, 0, 0.2));
+}
+.l1{
+    background: linear-gradient(rgb(71, 203, 255), rgba(0, 36, 241, 0.2));
+}
+.l2{
+    background: linear-gradient(rgb(211, 68, 255), rgba(255, 0, 191, 0.2));
+}
+.texto{
+    position: absolute;
+    bottom: -9px;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    color: rgb(35,35,35);
+    letter-spacing: 3px;
+}
+.t0{
+    text-shadow: -2px -2px 10px #f86300;
+    color: #ffffff;
+}
+.t1{
+    text-shadow: -2px -2px 10px #30aadb;
+    color: #fff;
+}
+.t2{
+    text-shadow: -2px -2px 10px #ff00dd;
+    color: #fff;
+}
+input{
+    accent-color: rgb(0, 255, 85);
+    cursor: pointer;
+}
